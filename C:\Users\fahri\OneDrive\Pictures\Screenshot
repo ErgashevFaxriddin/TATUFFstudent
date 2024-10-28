@@ -1,0 +1,17 @@
+import pandas as pd
+import numpy as np
+
+# 100 ta qator va 4 ta ustundan iborat tasodifiy ma'lumotlar yaratamiz
+data = {
+    'A': np.random.randint(1, 100, 100),
+    'B': np.random.rand(100),
+    'C': np.random.choice(['X', 'Y', 'Z'], 100),
+    'D': np.random.normal(0, 1, 100)
+}
+
+# Ma'lumotlarni DataFrame shaklida aks ettirish
+df = pd.DataFrame(data)
+
+# DataFrame'ni ko'rsatish
+print("Yaratilgan ma'lumotlar:")
+print(df.head())
