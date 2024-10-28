@@ -1,0 +1,16 @@
+import pandas as pd
+import numpy as np
+
+# NumPy orqali 100 ta tasodifiy sonlardan iborat massiv yaratamiz
+data = np.random.randn(100)
+
+# Pandas orqali bu ma'lumotlarni DataFrame shaklida ko'rsatamiz
+df = pd.DataFrame(data, columns=['Random Numbers'])
+
+# DataFrame'ning dastlabki 5 qatorini chiqarish
+print("Dastlabki 5 qator:")
+print(df.head())
+
+# DataFrame'ning statistik ma'lumotlarini chiqarish
+print("\nStatistik ma'lumotlar:")
+print(df.describe())
